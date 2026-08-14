@@ -4,23 +4,42 @@
 }
 
 @font-face {
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     src: url("fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 body {
-    background-color: #FFFFFF;
-    color: #000000;
+    margin: 0;
 }
 
-.title {
-    color: #06417C;
-    font-family: "Playfair Display", serif; /*serif is backup*/
-    font-size: 48px;
-    text-align: center;
+header {
+    background-color: #1F3345;
+    color: white;
+    padding: 20px 40px;
 }
 
-.description {
-    font-size: 20px;
-    font-family: "OpenSans", serif; /*serif is backup*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
