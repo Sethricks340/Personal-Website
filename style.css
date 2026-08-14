@@ -74,6 +74,8 @@ main {
     display: flex;
     align-items: flex-start;
     gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .portrait {
