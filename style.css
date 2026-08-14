@@ -302,4 +302,9 @@ p {
     border-bottom: 6px solid black;
 }
 
-
+.wand-media {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 662px;
+}

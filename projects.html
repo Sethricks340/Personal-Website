@@ -128,23 +128,36 @@
                 <!-- WAND PROJECT -->
                 <div class="wands">
 
-                    <div class="carousel" id="wand-carousel">
+                    <div class="wand-media">
 
-                        <button class="carousel-arrow left"
-                            onclick="changeImage(-1, 'wands')">&#10094;</button>
+                        <div class="carousel" id="wand-carousel">
 
-                        <img id="wands-image"
-                            src="images/wands.jpg"
-                            alt="Wand project">
+                            <button class="carousel-arrow left"
+                                onclick="changeImage(-1, 'wands')">&#10094;</button>
 
-                        <button class="carousel-arrow right"
-                            onclick="changeImage(1, 'wands')">&#10095;</button>
+                            <img id="wands-image"
+                                src="images/wandPCB1.jpg"
+                                alt="Wand project">
 
-                        <div class="carousel-indicators">
-                            <span class="active"></span>
-                            <span></span>
-                            <span></span>
+                            <button class="carousel-arrow right"
+                                onclick="changeImage(1, 'wands')">&#10095;</button>
+
+                            <div class="carousel-indicators">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
                         </div>
+
+                        <iframe
+                            width="662"
+                            height="372"
+                            src="https://www.youtube.com/embed/M4RuTsclbmM"
+                            title="Interactive Dueling Wand Game"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
 
                     </div>
 
@@ -161,23 +174,23 @@
                         <p>
                             I created Interactive Dueling Wands, which are a lot like laser tag.
                         </p>
-                        
+
                         <p>
-                            Each wand has an accelerometer, an RBG LED, a TFT LCD, a button, and a rechargeable battery. There is also a Goblet, which acts like the base station. It sends out a starting signal to the wands, along with a timer for how long a game will be. 
+                            Each wand has an accelerometer, an RGB LED, a TFT LCD, a button, and a rechargeable battery. There is also a Goblet, which acts like the base station. It sends out a starting signal to the wands, along with a timer for how long a game will be.
                         </p>
-                        
+
                         <p>
-                            There are 9 spells each wand can cast, which are combinations of roll, pitch, and yaw motions, recorded by the accelerometer. When a spell is cast successfully during a game, it is sent out to all the other wands in the area using ESP-NOW. This is how all the communications work in the game.
+                            There are 9 spells each wand can cast, which are combinations of roll, pitch, and yaw motions, recorded by the accelerometer. When a spell is cast successfully during a game, it is sent out to all the other wands in the area using ESP-NOW.
                         </p>
-                        
+
                         <p>
-                            Each spell affects wands in various ways, such as stunning yourself or opponents, adding or subtracting points, or shielding yourself or others. When the timer is up, players compare points to determine who won the game. 
+                            Each spell affects wands in various ways, such as stunning yourself or opponents, adding or subtracting points, or shielding yourself or others.
                         </p>
-                        
+
                         <p>
-                            After prototyping, I designed a custom PCB for each wand in KiCad, including custom footprints and precise dimensions to fit inside the wand case. This was by far my favorite project so far!
+                            I designed a custom PCB for each wand in KiCad, including custom footprints and precise dimensions to fit inside the wand case. This was by far my favorite project so far!
                         </p>
-                        
+
                         <p>
                             Wand Source code:
                             <a href="https://github.com/Sethricks340/Interactive-Wands" target="_blank">here</a>.

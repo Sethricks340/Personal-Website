@@ -11,9 +11,9 @@ const carousels = {
 
     wands: {
         images: [
-            "images/wands.jpg",
             "images/wandPCB1.jpg",
-            "images/wandPCB2.jpg"
+            "images/wandPCB2.jpg",
+            "images/wands.jpg"
         ],
         currentImage: 0
     }
