@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact - Seth Ricks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="site-title">
+                Seth Ricks Personal Website
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="education.html">Education Details</a>
+                <a href="documents/resume.pdf" target="_blank">Resume</a>
+                <a href="https://github.com/sethricks340" target="_blank">GitHub</a>
+                <a href="https://www.youtube.com/@SethRicksProjects" target="_blank">YouTube</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+
+        <div class="hero">
+            <div class="hero-title">
+                Projects
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="projects">
+
+            <h2>Work Projects</h2>
+
+                <!-- BNH PROJECT -->
+                <div class="BNH">
+
+                    <div class="project-image">
+
+                        <img src="images/BNH.jpg" alt="Work project">
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>
+                            Auxiliary Trigger System
+                        </h3>
+
+                        <p>
+                            (May 2026 - July 2026)
+                        </p>
+
+                        <p>
+                            • Created complex LabVIEW auxiliary trigger system for wind tunnel imaging <br>
+                            • Programmed low-level cRIO/FPGA VI logic to generate 30 precise, configurable waveforms simultaneously<br>
+                            • Authored comprehensive 30-page technical document to guide system operation and user modifications
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COUGAR GUI PROJECT -->
+                <div class="cougar-GUI">
+
+                    <div class="carousel">
+
+                        <button class="carousel-arrow left" onclick="changeImage(-1)">&#10094;</button>
+
+                        <img id="carousel-image" src="images/cougars.jpg" alt="Work project">
+
+                        <button class="carousel-arrow right" onclick="changeImage(1)">&#10095;</button>
+
+                        <div class="carousel-indicators">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>
+                            Active Cooperative Terrain-Aided Navigation Using Inverted USBL; Base Station GUI
+                        </h3>
+
+                        <p>
+                            (May 2025 - July 2025)
+                        </p>
+
+                        <p>
+                            I was apart of this group at my internship at the FRoSt Lab. The goal of the project was to have a multi-agent fleet navigating autonomously together, communicating over modem and estimating position based off of differences in the terrain. My specific assignment was to create a GUI for the base station, because when I arrived everything was operating from terminal. Now with the GUI we can see the status of the vehicles while they are in the mission, including location data and system status. This is done by communicating through a base station modem near the shore and connected to the base station computer. 
+
+Click on this link to see the code I wrote for this GUI: GUI GitHub
+I also wrote extensive documentation on the GUI, so that it could still be used and learned after I left. This included a guide to the repository, typical errors I found, and a list of things that still need to be done. Click on this link to see an exported PDF version of the documentation: GUI GitBook 
+                        </p>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
