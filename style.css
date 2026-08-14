@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "Playfair Display Bold";
+    src: url("fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Open Sans";
     src: url("fonts/OpenSans-Regular.ttf") format("truetype");
 }
@@ -25,7 +30,7 @@ header {
 }
 
 .site-title {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display Bold", serif;
     font-size: 24px;
 }
 
