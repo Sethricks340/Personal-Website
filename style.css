@@ -63,3 +63,9 @@ nav a:hover {
     font-size: 64px;
     color: white;
 }
+
+main {
+    background-color: white;
+    color: #222;
+    padding: 80px 10%;
+}
