@@ -4,7 +4,10 @@ body {
 }
 
 .title {
-    color: #4da6ff;
+    color: #06417C;
+    font-size: 48px;
+    font-family: Arial;
+    text-align: center;
 }
 
 .description {
