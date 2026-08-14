@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
 body {
     background-color: #FFFFFF;
     color: #000000;
@@ -5,6 +10,7 @@ body {
 
 .title {
     color: #06417C;
+    font-family: "Playfair Display", serif; /*serif is backup*/
     font-size: 48px;
     font-family: Arial;
     text-align: center;
