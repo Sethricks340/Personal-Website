@@ -1,31 +1,53 @@
-const images = [
-    "images/cougars.jpg",
-    "images/GUI_loading.jpg",
-    "images/GUI_panel.jpg",
-    "images/GUI_panel2.jpg"
-];
+const carousels = {
+    cougar_GUI: {
+        images: [
+            "images/cougars.jpg",
+            "images/GUI_loading.jpg",
+            "images/GUI_panel.jpg",
+            "images/GUI_panel2.jpg"
+        ],
+        currentImage: 0
+    },
 
-let currentImage = 0;
+    wands: {
+        images: [
+            "images/wands.jpg",
+            "images/wandPCB1.jpg",
+            "images/wandPCB2.jpg"
+        ],
+        currentImage: 0
+    }
+};
 
-function changeImage(direction) {
 
-    currentImage += direction;
+function changeImage(direction, project) {
 
-    if (currentImage < 0) {
-        currentImage = images.length - 1;
+    const carousel = carousels[project];
+
+    carousel.currentImage += direction;
+
+    if (carousel.currentImage < 0) {
+        carousel.currentImage = carousel.images.length - 1;
     }
 
-    if (currentImage >= images.length) {
-        currentImage = 0;
+    if (carousel.currentImage >= carousel.images.length) {
+        carousel.currentImage = 0;
     }
 
-    document.getElementById("carousel-image").src = images[currentImage];
+    // Change image
+    document.getElementById(project + "-image").src =
+        carousel.images[carousel.currentImage];
 
-    const dots = document.querySelectorAll(".carousel-indicators span");
+    // Change dots
+    const carouselElement = document.getElementById(
+        project === "cougar_GUI" ? "cougar-carousel" : "wand-carousel"
+    );
+
+    const dots = carouselElement.querySelectorAll(".carousel-indicators span");
 
     dots.forEach(dot => {
         dot.classList.remove("active");
     });
 
-    dots[currentImage].classList.add("active");
+    dots[carousel.currentImage].classList.add("active");
 }

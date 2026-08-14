@@ -74,13 +74,17 @@
                 <!-- COUGAR GUI PROJECT -->
                 <div class="cougar-GUI">
 
-                    <div class="carousel">
+                    <div class="carousel" id="cougar-carousel">
 
-                        <button class="carousel-arrow left" onclick="changeImage(-1)">&#10094;</button>
+                        <button class="carousel-arrow left"
+                            onclick="changeImage(-1, 'cougar_GUI')">&#10094;</button>
 
-                        <img id="carousel-image" src="images/cougars.jpg" alt="Work project">
+                        <img id="cougar_GUI-image"
+                            src="images/cougars.jpg"
+                            alt="Work project">
 
-                        <button class="carousel-arrow right" onclick="changeImage(1)">&#10095;</button>
+                        <button class="carousel-arrow right"
+                            onclick="changeImage(1, 'cougar_GUI')">&#10095;</button>
 
                         <div class="carousel-indicators">
                             <span class="active"></span>
@@ -102,10 +106,81 @@
                         </p>
 
                         <p>
-                            I was apart of this group at my internship at the FRoSt Lab. The goal of the project was to have a multi-agent fleet navigating autonomously together, communicating over modem and estimating position based off of differences in the terrain. My specific assignment was to create a GUI for the base station, because when I arrived everything was operating from terminal. Now with the GUI we can see the status of the vehicles while they are in the mission, including location data and system status. This is done by communicating through a base station modem near the shore and connected to the base station computer. 
+                            This project was for my internship at the FRoSt Lab. The goal of the project was to have a multi-agent fleet navigating autonomously together, communicating over modem and estimating position based off of differences in the terrain. My specific assignment was to create a GUI for the base station, because when I arrived everything was operating from terminal. Now with the GUI we can see the status of the vehicles while they are in the mission, including location data and system status. This is done by communicating through a base station modem near the shore and connected to the base station computer.
+                        </p>
 
-Click on this link to see the code I wrote for this GUI: GUI GitHub
-I also wrote extensive documentation on the GUI, so that it could still be used and learned after I left. This included a guide to the repository, typical errors I found, and a list of things that still need to be done. Click on this link to see an exported PDF version of the documentation: GUI GitBook 
+                        <p>
+                            GUI source code:
+                            <a href="https://github.com/Sethricks340/cougars-base-station/tree/Seth_RGUI" target="_blank">here</a>.
+                        </p>
+
+                        <p>
+                            GUI documentation:
+                            <a href="documents/CoUGARs_base_station_gui2.pdf" target="_blank">here</a>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <h2>Personal Projects</h2>
+
+                <!-- WAND PROJECT -->
+                <div class="wands">
+
+                    <div class="carousel" id="wand-carousel">
+
+                        <button class="carousel-arrow left"
+                            onclick="changeImage(-1, 'wands')">&#10094;</button>
+
+                        <img id="wands-image"
+                            src="images/wands.jpg"
+                            alt="Wand project">
+
+                        <button class="carousel-arrow right"
+                            onclick="changeImage(1, 'wands')">&#10095;</button>
+
+                        <div class="carousel-indicators">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>
+                            Interactive Dueling Wand Game
+                        </h3>
+
+                        <p>
+                            (September 2025 - December 2025)
+                        </p>
+
+                        <p>
+                            I created Interactive Dueling Wands, which are a lot like laser tag.
+                        </p>
+                        
+                        <p>
+                            Each wand has an accelerometer, an RBG LED, a TFT LCD, a button, and a rechargeable battery. There is also a Goblet, which acts like the base station. It sends out a starting signal to the wands, along with a timer for how long a game will be. 
+                        </p>
+                        
+                        <p>
+                            There are 9 spells each wand can cast, which are combinations of roll, pitch, and yaw motions, recorded by the accelerometer. When a spell is cast successfully during a game, it is sent out to all the other wands in the area using ESP-NOW. This is how all the communications work in the game.
+                        </p>
+                        
+                        <p>
+                            Each spell affects wands in various ways, such as stunning yourself or opponents, adding or subtracting points, or shielding yourself or others. When the timer is up, players compare points to determine who won the game. 
+                        </p>
+                        
+                        <p>
+                            After prototyping, I designed a custom PCB for each wand in KiCad, including custom footprints and precise dimensions to fit inside the wand case. This was by far my favorite project so far!
+                        </p>
+                        
+                        <p>
+                            Wand Source code:
+                            <a href="https://github.com/Sethricks340/Interactive-Wands" target="_blank">here</a>.
                         </p>
 
                     </div>
