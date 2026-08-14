@@ -13,6 +13,11 @@
     src: url("fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Playfair Display Medium";
+    src: url("fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+}
+
 body {
     margin: 0;
 }
@@ -67,7 +72,7 @@ nav a:hover {
 main {
     background-color: white;
     color: #222;
-    padding: 80px 10%;
+    padding: 30px 10%;
 }
 
 .intro {
@@ -79,8 +84,8 @@ main {
 }
 
 .portrait {
-    width: 150px;
-    height: 280px;
+    width: 168px;
+    height: 314px;
     object-fit: cover;
 }
 
@@ -90,7 +95,7 @@ main {
 
 .intro-text h2 {
     margin-top: 0;
-    font-family: "Playfair Display Bold", serif;
+    font-family: "Playfair Display Medium", serif;
     font-size: 42px;
     color: #1F5A85;
 }
