@@ -3,10 +3,10 @@ body {
     color: white;
 }
 
-h1 {
+.title {
     color: #4da6ff;
 }
 
-p {
+.description {
     font-size: 20px;
 }
