@@ -48,3 +48,18 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+.hero {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    border: 5px solid white;
+    padding: 40px 120px;
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    color: white;
+}
