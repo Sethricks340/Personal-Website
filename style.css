@@ -392,5 +392,33 @@ p {
     .Vitural-Microprocessor,
     .First-PCB {
         width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carousel,
+    .project-image,
+    .wand-media {
+        width: 100%;
+    }
+
+    .carousel {
+        height: auto;
+        aspect-ratio: 662 / 304;
+    }
+
+    .project-image {
+        height: auto;
+        aspect-ratio: 662 / 304;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .wand-media {
+        gap: 20px;
     }
 }
