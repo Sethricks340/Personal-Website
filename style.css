@@ -375,10 +375,11 @@ p {
 
 /* if on a phone */
 @media (max-width: 768px) {
+
     .projects {
+        transform: none;
         width: 100%;
         max-width: 100%;
-        transform: none;
     }
 
     .BNH,
@@ -394,23 +395,24 @@ p {
     .First-PCB {
         width: 100%;
         max-width: 100%;
-        display: flex;
         flex-direction: column;
-        box-sizing: border-box;
     }
 
-    .project-image,
     .carousel,
+    .project-image,
     .wand-media {
         width: 100%;
         max-width: 100%;
-        box-sizing: border-box;
     }
 
     iframe {
-        width: 100% !important;
         max-width: 100%;
+        width: 100% !important;
         height: auto;
-        aspect-ratio: 16 / 9;
+    }
+
+    .project-info {
+        width: 100%;
+        min-width: 0;
     }
 }
