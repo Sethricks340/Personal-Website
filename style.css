@@ -376,6 +376,7 @@ p {
 /* if on a phone */
 @media (max-width: 768px) {
     .projects {
+        width: 100%;
         max-width: 100%;
         transform: none;
     }
@@ -392,33 +393,24 @@ p {
     .Vitural-Microprocessor,
     .First-PCB {
         width: 100%;
+        max-width: 100%;
+        display: flex;
         flex-direction: column;
-        gap: 20px;
+        box-sizing: border-box;
     }
 
-    .carousel,
     .project-image,
+    .carousel,
     .wand-media {
         width: 100%;
-    }
-
-    .carousel {
-        height: auto;
-        aspect-ratio: 662 / 304;
-    }
-
-    .project-image {
-        height: auto;
-        aspect-ratio: 662 / 304;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     iframe {
-        width: 100%;
+        width: 100% !important;
+        max-width: 100%;
         height: auto;
         aspect-ratio: 16 / 9;
-    }
-
-    .wand-media {
-        gap: 20px;
     }
 }
