@@ -372,3 +372,25 @@ p {
     width: 1500px;
     padding-bottom: 100px;
 }
+
+/* if on a phone */
+@media (max-width: 768px) {
+    .projects {
+        max-width: 100%;
+        transform: none;
+    }
+
+    .BNH,
+    .cougar-GUI,
+    .wands,
+    .chess-v2,
+    .chess-v1,
+    .potato-game,
+    .Laser-Turret,
+    .LED-table,
+    .cat-companion,
+    .Vitural-Microprocessor,
+    .First-PCB {
+        width: 100%;
+    }
+}
